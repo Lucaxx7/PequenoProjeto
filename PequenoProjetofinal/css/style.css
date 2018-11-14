@@ -1,0 +1,418 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family:sans-serif;
+	/**background: url(imagens/imagem4.jpg);
+	background-position:center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;**/
+} 
+
+img {
+	max-width: 100%; /* todas as imagens do site ficam responsivas */
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+.social{
+	position: fixed;
+	left: 0;
+	top: 200px;
+	z-index: 2000;
+}
+.social ul {
+	list-style:none;
+}
+.social ul li a{
+	display: inline-block;
+	color: #fff;
+	background: #000;
+	padding: 10px 15px;
+	text-decoration:none;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition: all 500ms ease;
+}
+.social ul li a:hover{
+	padding: 10px 30px;
+}
+
+header{
+	position: fixed;
+	top:0;
+	left:0;
+	padding: 0 100px;
+	background-color: #000;
+	width:100%;
+	box-sizing: border-box;
+	z-index: 3;
+
+}
+
+
+header .logo{
+	color: #fff;
+	height:50px;
+	line-height: 50px;
+	font-size:24px;
+	float:left;
+	font-weight: bold;
+	z-index: 4;
+}
+
+
+header nav{
+	float:right;
+
+}
+
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li{
+	list-style: none;
+	position: relative;
+}
+
+header nav ul li.sub-menu:before{
+	content: '\f0d7';
+	font-family: fontAwesome;
+	position: absolute;
+	line-height: 50px;
+	color:#ff0000;
+	right:8px;
+
+}
+
+header nav ul li.active.sub-menu:before {
+	content: '\f0d8';
+}
+
+header nav ul li ul {
+	position: absolute;
+	left:0;
+	background: #000;
+	display: none;
+}
+
+header nav ul li.active ul{
+	display: block;
+}
+
+header nav ul li ul li{
+	display: block;
+	width: 200px;
+}
+
+header nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	height:50px;
+	line-height: 50px;
+	padding: 0 25px;
+	display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{
+	background:#ff0000;
+}
+
+
+.menu-toggle{
+	color:white;
+	float:right;
+	line-height: 50px;
+	font-size:24px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 991px){
+
+	header{
+		padding:0 20px;
+	}
+
+	.menu-toggle{
+		display: block;
+	}
+
+	header nav{
+		position: absolute;
+		width:100%;
+		height: calc(100vh - 50px);
+		background-color: #ff0000;
+		top:50px;
+		left:-100%;
+		transition: 0.5s;
+	}
+
+	header nav.active{
+		left:0px;
+	}
+
+	header nav ul{
+		display: block;
+		text-align: center;
+	}
+
+	header nav ul li a{
+		border-bottom: 1px solid rgba(0,0,0,.7);
+	}
+
+	header nav ul li.active ul{
+	    position: relative;
+	    background-color: #000000;
+    }
+
+    header nav ul li ul li{
+    	width:100vw;
+    	text-align: center;
+    }
+
+}
+
+
+.Layout{
+	height: 350px;
+	padding-top: 200px;
+	background-attachment: fixed;
+	background size: cover;
+	background position: center;
+}
+
+.Layout p{
+	text-align: center;
+	color: #e3e4e5;
+	font-size: 2.5em;
+}
+
+
+.DivTexto{
+	background-color: #000000;
+	color: #fff;
+	max-width: 100%
+
+}
+
+.Recuo{
+	text-indent: 4em;
+}
+
+.Recuo2{
+	text-indent: 4em;
+}
+
+.Recuo3{
+	text-indent: 4em;
+}
+
+
+.Recuuo{
+	text-indent: 4em;
+}
+
+.Recuuo2{
+	text-indent: 4em;
+}
+
+.Recuuo3{
+	text-indent: 4em;
+}
+.Recuuo4{
+	text-indent: 4em;
+}
+
+.Recuuo5{
+	text-indent: 4em;
+}
+
+.Recuuo6{
+	text-indent: 4em;
+}
+.Recuuo7{
+	text-indent: 4em;
+}
+
+.Recuuo8{
+	text-indent: 4em;
+}
+
+.Recuuo9{
+	text-indent: 4em;
+}
+.Recuuo10{
+	text-indent: 4em;
+}
+
+.Recuuo11{
+	text-indent: 4em;
+}
+
+
+
+.Destaque{
+	padding: 150px 0px 150px 0px; /*box model*/
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+footer{
+	width: 100%;
+	background-color: #000000;
+	margin-top: 50px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.75em;
+}
+
+/***** Formulário de Contato *****/
+#contato{
+	padding-top: 80px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	margin-bottom: 20px;
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 40px 10px;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+#contato input[type=submit]{
+	background-color: #000000;
+	border-radius: 5px;
+	border: 1px solid #ffffff;
+	padding: 10px 25px 10px 25px;
+	color: #fff;
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+ width: 80%;
+ height: 90%;
+ max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Botão próximo e anterior*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Posicionar o botão próximo para direita*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* No hover, adicionar um bg preto*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Numero text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Os dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Animaçãofading*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Em telas menores diminuir tamanho do texto*/
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+}
+
+
